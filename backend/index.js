@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/api", (req, res) => {
-  res.json({ message: "Hello from backend!" });
+  res.status(200).json({ msg:'90' });
 });
 
 const PORT = process.env.PORT || 5000;
